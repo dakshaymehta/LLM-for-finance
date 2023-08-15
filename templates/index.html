@@ -1,0 +1,16 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LFM - Large Financial Model</title>
+</head>
+<body>
+    <h1>Ask Your Stock Questions</h1>
+    <form action="/ask" method="post">
+        <label for="question">Question:</label>
+        <input type="text" id="question" name="question">
+        <input type="submit" value="Ask">
+    </form>
+    <p>{{ answer }}</p>
+</body>
+</html>
